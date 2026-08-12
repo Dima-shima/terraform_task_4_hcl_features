@@ -3,7 +3,11 @@ variable "prefix" {
 }
 
 variable "nic_names" {
-  default = ["nic1", "nic2", "nic3"]
+  default = {
+    vm1 = "nic1"
+    vm2 = "nic2"
+    vm3 = "nic3"
+  }
 }
 
 variable "security_rules" {
